@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - VanillaGift</title>
+  <meta name="description" content="VanillaGift Privacy Policy. Learn how we collect, use, and protect your personal information when you use our gift card management services.">
+  <link rel="canonical" href="privacy">
+  <link rel="alternate" hreflang="en-us" href="privacy">
+  <meta property="og:title" content="Privacy Policy - VanillaGift">
+  <meta property="og:description" content="Learn how VanillaGift collects, uses, and protects your personal information.">
+  <meta property="og:url" content="privacy">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Privacy Policy - VanillaGift">
+  <meta name="twitter:description" content="Learn how VanillaGift collects, uses, and protects your personal information.">
+  <meta name="twitter:image" content="og-image.png">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .page-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 48px 40px;
+    }
+
+    .page-container h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .page-subtitle {
+      color: #888;
+      font-size: 15px;
+      margin-bottom: 36px;
+    }
+
+    .policy-section {
+      background: #fff;
+      border: 1px solid #e0d8d0;
+      border-radius: 4px;
+      padding: 28px 32px;
+      margin-bottom: 20px;
+    }
+
+    .policy-section h2 {
+      font-size: 18px;
+      color: #b71c1c;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .policy-section p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+
+    .policy-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .policy-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0;
+    }
+
+    .policy-section li {
+      font-size: 14px;
+      color: #555;
+      padding: 4px 0;
+      padding-left: 16px;
+      position: relative;
+      line-height: 1.7;
+    }
+
+    .policy-section li::before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      background: #b71c1c;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+      top: 12px;
+    }
+
+    .cta-box {
+      background: #faf7f4;
+      border: 1px solid #e0d8d0;
+      border-radius: 4px;
+      padding: 28px 32px;
+      text-align: center;
+      margin-top: 28px;
+    }
+
+    .cta-box h2 {
+      font-size: 20px;
+      color: #b71c1c;
+      margin-bottom: 10px;
+    }
+
+    .cta-box p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 16px;
+    }
+
+    .cta-box a {
+      display: inline-block;
+      background: #3d3d3d;
+      color: #fff;
+      text-decoration: none;
+      padding: 12px 32px;
+      border-radius: 3px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .cta-box a:hover {
+      background: #2a2a2a;
+    }
+
+    @media (max-width: 768px) {
+      .page-container { padding: 24px 16px; }
+      .page-container h1 { font-size: 24px; }
+      .policy-section { padding: 20px 18px; }
+      .policy-section h2 { font-size: 17px; }
+      .cta-box { padding: 24px 20px; }
+      .cta-box a { padding: 14px 28px; min-height: 48px; display: inline-flex; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <div class="top-cards">
+        <span>Visa<sup>&reg;</sup> Prepaid Card</span>
+        <span>Mastercard<sup>&reg;</sup> Prepaid Card</span>
+        <span>Discover<sup>&reg;</sup> Prepaid Card</span>
+        <span>Visa<sup>&reg;</sup> Virtual Gift Account</span>
+      </div>
+      <nav class="top-nav" aria-label="Quick links">
+        <a href="index.html" class="top-link">View Balance</a>
+        <a href="help" class="top-link">Need Assistance? <span class="arrow">&#9662;</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="sub-header">
+    <div class="sub-header-inner">
+      <a href="index.html" class="logo">vanila<span class="logo-dot">.</span>gift</a>
+      <nav class="sub-nav" aria-label="Main navigation">
+        <a href="about">About</a>
+        <a href="services">Services</a>
+        <a href="contact">Contact</a>
+        <a href="help">Help</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="page-container">
+    <h1>Our Commitment to Your Privacy</h1>
+    <p class="page-subtitle">Last updated: March 7, 2026</p>
+
+    <div class="policy-section">
+      <h2>About This Policy</h2>
+      <p>At VanillaGift ("we," "our," or "us"), safeguarding your personal data is a core priority. This document describes the ways we gather, handle, share, and secure your information whenever you access vanillagift-ballance.com or use any of our gift card services.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Data We Gather</h2>
+      <p>The following categories of data may be collected during your interactions with our platform:</p>
+      <ul>
+        <li><strong>Card Details:</strong> Your card number, expiry date, and security code submitted during balance lookups. These are handled instantly during the request and never retained on our infrastructure.</li>
+        <li><strong>Personal Contact Data:</strong> Your name, email, and telephone number provided through our support channels or inquiry forms.</li>
+        <li><strong>Behavioral and Technical Data:</strong> Information such as your browser version, device operating system, IP address, visited pages, and session duration, gathered automatically via cookies and comparable tracking methods.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>Purpose of Data Usage</h2>
+      <p>Your information serves the following specific functions within our operations:</p>
+      <ul>
+        <li>Fulfilling balance lookup requests and presenting your current card value</li>
+        <li>Addressing and resolving your support tickets and questions</li>
+        <li>Enhancing the quality and performance of our website and offerings</li>
+        <li>Evaluating visitor behavior and identifying service improvement opportunities</li>
+        <li>Detecting and preventing fraud or any unauthorized access attempts</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>Protecting Your Data</h2>
+      <p>We apply recognized security protocols to keep your personal information safe. Every transmission on our site is protected through SSL/TLS encryption. Once a balance inquiry has been completed, we do not retain your complete card number, security code, or any other sensitive payment card data.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Cookie Usage</h2>
+      <p>We rely on cookies to deliver a smoother experience on our platform. These are small data files placed on your device that allow us to learn how visitors navigate our pages. You may adjust your cookie preferences within your browser settings, though doing so could limit some site functionality.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>External Service Providers</h2>
+      <p>Certain functions on our platform involve external partners, including analytics tools and payment processing vendors. Each of these providers operates under its own privacy terms and may independently collect user data. We never sell, lease, or trade your personal information to outside parties for promotional use.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>What You Are Entitled To</h2>
+      <p>As a user of our services, you may exercise the following rights at any time:</p>
+      <ul>
+        <li>Obtain a copy of the personal information we maintain about you</li>
+        <li>Ask us to correct any data that is outdated or inaccurate</li>
+        <li>Instruct us to erase your personal records from our systems</li>
+        <li>Withdraw from any promotional or marketing messages</li>
+        <li>File a formal concern with the relevant data protection regulator</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>Policy Revisions</h2>
+      <p>This Privacy Policy may be revised periodically to reflect changes in our practices or legal requirements. Updated versions will appear on this page along with a new effective date. We recommend checking back regularly to stay informed.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>Get in Touch</h2>
+      <p>For questions or concerns regarding this Privacy Policy or how we handle your data, reach out to us at <a href="mailto:support@vanillagift-ballance.com" style="color:#b71c1c;">support@vanillagift-ballance.com</a> or call <strong>727-833-4219</strong>.</p>
+    </div>
+
+    <div class="cta-box">
+      <h2>Look Up Your Card Balance Now</h2>
+      <p>Head to our main page to retrieve your gift card balance in seconds.</p>
+      <a href="index.html">View Your Balance</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="privacy">Privacy Policy</a>
+      <a href="terms">Terms of Service</a>
+    </div>
+    <p>&copy; 2026 All rights reserved.</p>
+  </footer>
+</body>
+</html>

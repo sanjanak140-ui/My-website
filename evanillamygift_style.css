@@ -1,0 +1,769 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: #f5f0eb;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top red bar */
+.top-bar {
+  background: #b71c1c;
+  padding: 12px 40px;
+}
+
+.top-bar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-cards {
+  display: flex;
+  gap: 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.top-cards sup {
+  font-size: 8px;
+}
+
+.top-nav {
+  display: flex;
+  gap: 32px;
+}
+
+.top-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.top-link:hover {
+  text-decoration: underline;
+}
+
+.top-link.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.top-link .arrow {
+  font-size: 10px;
+  margin-left: 2px;
+}
+
+/* Sub header - cream bar */
+.sub-header {
+  background: #f5f0eb;
+  padding: 16px 40px;
+  border-bottom: 1px solid #e0d8d0;
+}
+
+.sub-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #d32f2f;
+  letter-spacing: -0.5px;
+  text-decoration: none;
+}
+
+.logo-dot {
+  font-size: 28px;
+  position: relative;
+  top: -2px;
+}
+
+.sub-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.sub-nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.sub-nav a:hover {
+  color: #b71c1c;
+}
+
+/* Main layout */
+main {
+  flex: 1;
+}
+
+.main-inner {
+  display: flex;
+  min-height: 520px;
+}
+
+.form-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 40px;
+  background: #f5f0eb;
+}
+
+.card-form-container {
+  background: #fff;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+  padding: 0;
+  width: 100%;
+  max-width: 480px;
+  overflow: hidden;
+}
+
+.card-form-container::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background: linear-gradient(90deg, #b71c1c, #e53935);
+}
+
+.card-form-body {
+  padding: 32px 40px 36px;
+}
+
+h1 {
+  color: #b71c1c;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #b71c1c;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-bottom: 2px solid #e0d8d0;
+  border-radius: 0;
+  font-size: 16px;
+  transition: border-color 0.2s;
+  outline: none;
+  background: transparent;
+  color: #333;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+input:focus {
+  border-bottom-color: #b71c1c;
+}
+
+.expiry-row {
+  display: flex;
+  gap: 24px;
+  align-items: flex-end;
+}
+
+.expiry-row > input {
+  width: 70px;
+  flex: none;
+}
+
+.cvv-field {
+  flex: none;
+  width: 90px;
+}
+
+.cvv-label {
+  margin-bottom: 6px;
+}
+
+.cvv-help {
+  color: #b71c1c;
+  font-size: 13px;
+  cursor: help;
+}
+
+.show-card-info {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.eye-icon {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.show-card-info:hover {
+  color: #b71c1c;
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  background: #3d3d3d;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  appearance: none;
+  min-height: 48px;
+}
+
+button:hover {
+  background: #2a2a2a;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:disabled {
+  background: #bbb;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Result & error */
+.result {
+  margin-top: 24px;
+  margin-bottom: 36px;
+  padding: 24px;
+  background: linear-gradient(135deg, #b71c1c, #e53935);
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.result-header {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.85;
+  margin-bottom: 8px;
+}
+
+.balance-amount {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.error {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: #fdecea;
+  color: #b71c1c;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Hero right side */
+.hero-side {
+  flex: 1;
+  max-width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  background: #b71c1c;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.hero-card {
+  width: 180px;
+  height: 115px;
+  background: linear-gradient(180deg, #1a237e 0%, #1565c0 40%, #0d47a1 100%);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.hero-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 35px;
+  background: linear-gradient(180deg, transparent, rgba(100, 181, 246, 0.5));
+  border-radius: 0 0 10px 10px;
+}
+
+.hero-card-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-card-debit {
+  color: #fff;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-card-text {
+  color: #fff;
+  font-size: 24px;
+  font-style: italic;
+  font-family: 'Georgia', serif;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin: -4px 0;
+}
+
+.hero-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-card-gift {
+  color: #fff;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  opacity: 0.9;
+}
+
+.hero-card-visa {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+/* Form extras */
+.form-extras {
+  width: 100%;
+  max-width: 480px;
+  margin-top: 28px;
+}
+
+.accepted-cards {
+  margin-bottom: 24px;
+}
+
+.accepted-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #888;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.card-badges {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.badge {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge.visa {
+  background: #1a1f71;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 2px;
+  padding: 8px 16px;
+}
+
+.badge.mastercard svg {
+  width: 44px;
+  height: 28px;
+}
+
+.quick-tips {
+  background: #faf7f4;
+  border: 1px solid #e0d8d0;
+  border-radius: 4px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+
+.quick-tips h3 {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.quick-tips ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-tips li {
+  font-size: 13px;
+  color: #666;
+  padding: 3px 0;
+  padding-left: 16px;
+  position: relative;
+}
+
+.quick-tips li::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: #b71c1c;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+.need-help {
+  text-align: center;
+}
+
+.need-help p {
+  font-size: 13px;
+  color: #888;
+}
+
+.need-help a {
+  color: #b71c1c;
+  text-decoration: none;
+  font-weight: 600;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.need-help a:hover {
+  text-decoration: underline;
+}
+
+/* Info section */
+.info-section {
+  background: #fff;
+  padding: 48px 40px;
+  border-top: 1px solid #e0d8d0;
+}
+
+.info-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+}
+
+.info-block {
+  flex: 1;
+}
+
+.info-block h2 {
+  font-size: 18px;
+  color: #b71c1c;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.info-block p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 24px 20px;
+  color: #999;
+  font-size: 13px;
+  background: #f5f0eb;
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+
+footer a {
+  color: #888;
+  text-decoration: none;
+  padding: 8px 4px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+footer a:hover {
+  color: #b71c1c;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  /* Top bar: hide card brands, keep nav */
+  .top-cards {
+    display: none;
+  }
+
+  .top-bar {
+    padding: 10px 16px;
+  }
+
+  .top-bar-inner {
+    justify-content: center;
+  }
+
+  .top-nav {
+    gap: 24px;
+  }
+
+  .top-link {
+    font-size: 13px;
+    padding: 4px 0;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* Sub header: stack logo + nav */
+  .sub-header {
+    padding: 12px 16px;
+  }
+
+  .sub-header-inner {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .sub-nav {
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sub-nav a {
+    font-size: 14px;
+    padding: 8px 12px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* Main layout: form first, hero smaller */
+  .main-inner {
+    flex-direction: column-reverse;
+  }
+
+  .hero-side {
+    max-width: 100%;
+    min-height: 180px;
+    max-height: 200px;
+  }
+
+  .hero-card {
+    width: 120px;
+    height: 76px;
+    bottom: 16px;
+    right: 16px;
+    padding: 8px 10px;
+  }
+
+  .hero-card-text {
+    font-size: 16px;
+  }
+
+  .hero-card-visa {
+    font-size: 12px;
+  }
+
+  .form-side {
+    padding: 24px 16px;
+  }
+
+  .card-form-container {
+    border-radius: 12px;
+  }
+
+  .card-form-body {
+    padding: 24px 20px 28px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  /* Form inputs: proper touch targets */
+  .expiry-row {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .expiry-row > input {
+    width: 60px;
+    min-height: 44px;
+  }
+
+  .cvv-field {
+    width: 80px;
+  }
+
+  .cvv-field input {
+    min-height: 44px;
+  }
+
+  /* Form extras */
+  .form-extras {
+    margin-top: 20px;
+  }
+
+  .quick-tips {
+    padding: 14px 16px;
+  }
+
+  /* Info section */
+  .info-inner {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .info-section {
+    padding: 32px 16px;
+  }
+
+  .info-block h2 {
+    font-size: 17px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px 16px;
+    padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+  }
+
+  footer .footer-links {
+    gap: 20px;
+  }
+
+  footer a {
+    font-size: 14px;
+    padding: 10px 8px;
+  }
+}
+
+/* Small phones (iPhone SE, etc) */
+@media (max-width: 380px) {
+  .sub-nav {
+    gap: 4px;
+  }
+
+  .sub-nav a {
+    font-size: 13px;
+    padding: 8px 8px;
+  }
+
+  .card-form-body {
+    padding: 20px 16px 24px;
+  }
+
+  .expiry-row {
+    gap: 12px;
+  }
+}
